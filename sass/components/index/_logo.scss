@@ -1,0 +1,20 @@
+.logo {
+  font-family: raleway, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.03em;
+  color: $logo-fullblack-color;
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: calc(26 / 31);
+  }
+}
+.page-footer__logo {
+  display: block;
+  margin-bottom: 20px;
+  color: $main-white-color;
+}
+.logo__part {
+  color: $accent-color;
+}

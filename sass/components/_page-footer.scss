@@ -1,0 +1,138 @@
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+  background-color: $sub-bg-color;
+}
+.page-footer-nav{
+  @media screen and(min-width: 1200px){
+      text-align: left;
+  }
+}
+.footer-flex {
+  @media screen and(min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+}
+.contacts {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.contacts .item {
+  margin-bottom: 8px;
+  &:last-child {
+    margin-bottom: 89px;
+  }
+  @media screen and(min-width: 768px) {
+    &:last-child {
+      margin-bottom: 60px;
+    }
+  }
+}
+.contacts .link {
+  color: rgba(255, 255, 255, 0.6);
+  transition: color $timing-function;
+}
+.contacts .location {
+  color: $main-white-color;
+}
+.contacts .link:hover,
+.contacts .link:focus {
+  color: $accent-color;
+}
+.join {
+  color: $main-white-color;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  margin-bottom: 60px;
+}
+.socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  transition: background-color $timing-function;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+.socials-logo {
+  width: 20px;
+  height: 20px;
+  fill: $main-white-color;
+}
+.footer-form {
+  @media screen and(min-width: 1200px) {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+.footer-form-lable {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $main-white-color;
+}
+.footer-form-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  padding: 15px 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(20 - 16);
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  transition: border $timing-function;
+  background-color: inherit;
+  &:focus,
+  &:hover {
+    border: 1px solid $accent-color;
+    outline: $accent-color;
+  }
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-bottom: 0px;
+  }
+}
+.footer-btn {
+  @extend %form-btn;
+  padding: 10px 28px;
+  @media screen and(min-width: 1200px) {
+    margin-left: 12px;
+  }
+}
+.footer-form-icon {
+  margin-left: 10px;
+  fill: $main-white-color;
+}
